@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#36000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_parentLayout"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="请选择"
+            android:textSize="12sp" />
+
+        <View style="@style/horizontalLine" />
+
+        <TextView
+            android:id="@+id/tvTakePhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/pop_take_photo"
+            android:textSize="15sp" />
+
+        <View style="@style/horizontalLine" />
+
+        <TextView
+            android:id="@+id/tvPickPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/pop_pic_photo"
+            android:textSize="15sp" />
+
+        <View style="@style/horizontalLine" />
+
+        <View
+            style="@style/horizontalLine"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/tvCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/pop_cancel"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</RelativeLayout>

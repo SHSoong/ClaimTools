@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_parentLayout">
+
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/common_title_bar" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvEmpty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/apply_empty"
+            android:textColor="@color/text_8e8e93"
+            android:gravity="center"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/mScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topLayout"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <View style="@style/horizontalLine" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout style="@style/normalItem">
+
+                        <TextView
+                            android:id="@+id/tvProNameDes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/clock_out_proName"
+                            android:textColor="@android:color/black"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/tvProName"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="15dp"
+                            android:layout_toEndOf="@+id/tvProNameDes"
+                            android:gravity="center|end"
+                            android:singleLine="true"
+                            android:textColor="@color/text_8e8e93"
+                            android:textSize="17sp" />
+                    </RelativeLayout>
+
+                    <View style="@style/horizontalLine" />
+
+                    <RelativeLayout style="@style/normalItem">
+
+                        <TextView
+                            android:id="@+id/tvTimeDes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/clock_out_proTime"
+                            android:textColor="@android:color/black"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/tvTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="15dp"
+                            android:layout_toEndOf="@+id/tvTimeDes"
+                            android:gravity="center|end"
+                            android:singleLine="true"
+                            android:textColor="@color/text_8e8e93"
+                            android:textSize="17sp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llCheckInTypeDes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <View style="@style/horizontalLine" />
+
+                        <RelativeLayout style="@style/normalItem">
+
+                            <TextView
+                                android:id="@+id/tvCheckInTypeDes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="@string/apply_type"
+                                android:textColor="@android:color/black"
+                                android:textSize="17sp" />
+
+                            <TextView
+                                android:id="@+id/tvCheckInType"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="15dp"
+                                android:layout_toEndOf="@+id/tvCheckInTypeDes"
+                                android:gravity="center|end"
+                                android:singleLine="true"
+                                android:textColor="@color/text_8e8e93"
+                                android:textSize="17sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View style="@style/horizontalLine" />
+
+                    <RelativeLayout style="@style/normalItem">
+
+                        <TextView
+                            android:id="@+id/tvFoodSubsidiesDes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/apply_food"
+                            android:textColor="@android:color/black"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/tvFoodSubsidies"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="15dp"
+                            android:layout_toEndOf="@+id/tvFoodSubsidiesDes"
+                            android:gravity="center|end"
+                            android:singleLine="true"
+                            android:textColor="@color/text_8e8e93"
+                            android:textSize="17sp" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <View style="@style/horizontalLine" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <View style="@style/horizontalLine" />
+
+                <RelativeLayout
+                    style="@style/normalItem"
+                    android:paddingEnd="15dp"
+                    android:paddingStart="15dp">
+
+                    <TextView
+                        android:id="@+id/tvLeft3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/apply_traffic"
+                        android:textColor="@android:color/black"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/etPrice"
+                        style="@style/normalEditView"
+                        android:layout_toEndOf="@+id/tvLeft3"
+                        android:gravity="center|end"
+                        android:inputType="numberDecimal"
+                        android:hint="@string/apply_traffic"
+                        android:maxLength="9"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@color/text_8e8e93"
+                        android:textSize="17sp" />
+                </RelativeLayout>
+
+                <View
+                    style="@style/horizontalLine"
+                    android:layout_marginStart="15dp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/mRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:scrollbars="none" />
+
+                <View style="@style/horizontalLine" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSubmit"
+                style="?borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/sel_circle_square_green_to_gray"
+                android:text="@string/apply_submit"
+                android:textColor="@android:color/white"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

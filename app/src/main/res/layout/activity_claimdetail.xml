@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_parentLayout"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/common_title_bar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <View style="@style/horizontalLine" />
+
+        <RelativeLayout
+            style="@style/normalItem"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp">
+
+            <TextView
+                android:id="@+id/tvClaimType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/claim_type"
+                android:textColor="@android:color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tvClaimSelectType"
+                style="@style/normalEditView"
+                android:layout_toEndOf="@+id/tvClaimType"
+                android:gravity="end|center"
+                android:hint="@string/claim_select_type"
+                android:textColor="@android:color/black"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                style="@style/horizontalLine"
+                android:layout_marginStart="15dp" />
+
+            <RelativeLayout
+                style="@style/normalItem"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp">
+
+                <TextView
+                    android:id="@+id/tvClaimPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/claim_number"
+                    android:textColor="@android:color/black"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/etClaimPrice"
+                    style="@style/normalEditView"
+                    android:layout_toEndOf="@+id/tvClaimPrice"
+                    android:gravity="end|center"
+                    android:hint="@string/claim_setting_number"
+                    android:inputType="numberDecimal"
+                    android:textColor="@android:color/black"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View style="@style/horizontalLine" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <View style="@style/horizontalLine" />
+
+        <TextView
+            android:id="@+id/tvClaimRemark"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:gravity="center_vertical"
+            android:text="@string/claim_remark"
+            android:layout_marginStart="15dp"
+            android:textColor="@android:color/black"
+            android:textSize="17sp" />
+
+        <View style="@style/horizontalLine"
+            android:layout_marginStart="15dp"/>
+
+        <EditText
+            android:id="@+id/etClaimRemark"
+            style="@style/editView"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="@string/claim_description"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:paddingTop="5dp"
+            android:textColor="@android:color/black"
+            android:textSize="17sp" />
+
+        <View style="@style/horizontalLine" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        style="?borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/sel_circle_square_green_to_gray"
+        android:text="@string/claim_submit"
+        android:textColor="@android:color/white"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/tv_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/claim_explain"
+        android:textColor="@color/text_8A8A8F"
+        android:textSize="13sp" />
+
+</LinearLayout>

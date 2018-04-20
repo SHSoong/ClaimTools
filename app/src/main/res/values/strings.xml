@@ -1,0 +1,116 @@
+<resources>
+    <string name="app_name">GTClaim</string>
+
+    <string name="network_error">请求网络失败！</string>
+    <!--des-->
+    <string name="desImageView">ImageView</string>
+    <string name="desButton">Button</string>
+
+    <!--MainActivity text-->
+    <string name="main_apply_tips">您的加班申请未填写，请及时填写</string>
+    <string name="main_tab_0">OT报销申请</string>
+    <string name="main_tab_1">打卡</string>
+    <string name="main_tab_2">设备报销申请</string>
+    <string name="main_tab_3">行政报销申请</string>
+
+    <!--LoginActivity text-->
+    <string name="login_tips">登录</string>
+    <string name="login_email">邮箱</string>
+    <string name="login_email_empty">请输入邮箱！</string>
+    <string name="login_email_error">邮箱格式错误，请注意！</string>
+    <string name="single_login_dialog_title">提示</string>
+    <string name="single_login_dialog_close">我知道了</string>
+    <string name="single_login_dialog_msg">请重新登录！</string>
+
+    <!--OtDetailActivityvity text-->
+    <string name="apply_title">加班报销管理</string>
+    <string name="apply_submit">提交申请</string>
+    <string name="apply_food">餐饮补贴</string>
+    <string name="apply_food_tips">RMB %1$s</string>
+    <string name="apply_traffic">交通补贴</string>
+    <string name="apply_type">补休类型</string>
+    <string name="apply_type_1">无</string>
+    <string name="apply_type_2">无</string>
+    <string name="apply_type_3">次日上午</string>
+    <string name="apply_type_4">次日全天</string>
+    <string name="apply_dialog_title">提示</string>
+    <string name="apply_dialog_close">我知道了</string>
+    <string name="apply_dialog_suc">提交成功！</string>
+    <string name="apply_dialog_empty">信息尚未填写完成，请补充完整！</string>
+    <string name="apply_empty">获取数据失败\n请返回重试</string>
+
+    <!--ClockOutActivity text-->
+    <string name="clock_out_proName">项目名称</string>
+    <string name="clock_out_proName_tips">项目名称(最多10个字)</string>
+    <string name="clock_out_proTime">时间</string>
+    <string name="clock_out_submit">打卡</string>
+    <string name="clock_out_title">打卡</string>
+    <string name="clock_dialog_title">提示</string>
+    <string name="clock_dialog_suc">打卡成功！</string>
+    <string name="clock_dialog_close">我知道了</string>
+    <string name="clock_out_proName_empty">请输入项目名称！</string>
+
+    <!--ClaimDetailActivity text-->
+    <string name="claim_type">报销类型</string>
+    <string name="claim_type_tips">请选择报销类型</string>
+    <string name="claim_select_type">选择类型</string>
+    <string name="claim_number">报销金额</string>
+    <string name="claim_number_tips">请输入报销金额</string>
+    <string name="claim_setting_number">填写金额</string>
+    <string name="claim_remark">备注(选填)</string>
+    <string name="claim_description">不超过50个字</string>
+    <string name="claim_submit">提交申请</string>
+    <string name="claim_explain">非本月申请不可修改</string>
+
+    <!-- HR -->
+    <string name="hr_todo_title">待办事项</string>
+    <string name="hr_todo_apply_title">%1$d月%2$d日加班</string>
+    <string name="hr_todo_apply_title2">%1$s 补休申请</string>
+    <string name="hr_todo_clock_time">打卡时间：%1$s</string>
+    <string name="hr_todo_rest_half">申请补休：次日上午</string>
+    <string name="hr_todo_rest_full">申请补休：次日全天</string>
+
+    <!--加班报销管理-->
+    <string name="overview_title">加班报销管理</string>
+    <string name="overview_apply">已申请</string>
+    <string name="overview_amount">总金额</string>
+    <string name="overview_type_none">补休类型：无</string>
+    <string name="overview_type_half">补休类型：次日上午</string>
+    <string name="overview_type_full">补休类型：次日全天</string>
+    <string name="overview_project">项目：%1$s</string>
+
+    <!--报销管理-->
+    <string name="claim_title_eqp">设备报销管理</string>
+    <string name="claim_title_adm">行政报销管理</string>
+    <string name="claim_type_eqp_0">PC/Server/Mac</string>
+    <string name="claim_type_eqp_1">配件</string>
+    <string name="claim_type_eqp_2">办公家私</string>
+    <string name="claim_type_adm_0">日常用品</string>
+    <string name="claim_type_adm_1">文具</string>
+    <string name="claim_type_adm_2">饮食</string>
+    <string name="claim_type_adm_3">差旅</string>
+
+    <!--popWin photo-->
+    <string name="pop_take_photo">拍照</string>
+    <string name="pop_pic_photo">相册</string>
+    <string name="pop_cancel">取消</string>
+
+    <!--权限-->
+    <string name="permission_global_tips">GTClaim将获取你手机上读取SD卡和手机状态的权限</string>
+    <string name="permission_denied_global">已拒绝权限，应用将自动退出。</string>
+    <string name="permission_never_ask_global">已永久拒绝权限，不开启权限应用将自动退出，是否现在去开启？</string>
+    <string name="permission_never_ask_camera">已永久拒绝拍照权限，不开启权限功能将无法使用，是否现在去开启？</string>
+
+    <!--global-->
+    <string name="suffix_year">%1$s年</string>
+    <string name="suffix_month">%1$s月</string>
+    <string name="suffix_month_day">%1$d月%2$d日</string>
+
+    <string name="prefix_amount">金额：RMB %1$s</string>
+    <string name="prefix_time">时间：%1$s</string>
+
+    <string name="notification_title">加班申请</string>
+    <string name="dialog_confirm">确定</string>
+    <string name="dialog_cancel">取消</string>
+
+</resources>

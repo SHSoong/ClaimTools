@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="data"
+            type="com.gt.gzclaimapp.databinding.OtClaimDailyData" />
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:id="@+id/leftLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/claimDateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end|center_vertical"
+                android:text="@{data.claimDate}"
+                android:textColor="@color/text_221e1f"
+                android:textSize="@dimen/list_item_text_17" />
+
+            <TextView
+                android:id="@+id/amountText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="8"
+                android:gravity="center_vertical"
+                android:text="@{data.amount}"
+                android:textColor="@color/text_939598"
+                android:textSize="@dimen/list_item_text_15" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rightLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toRightOf="@id/leftLayout"
+            app:layout_constraintTop_toTopOf="@id/leftLayout">
+
+            <TextView
+                android:id="@+id/applyDateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end|center_vertical"
+                android:text="@{data.applyDate}"
+                android:textColor="@color/text_221e1f"
+                android:textSize="@dimen/list_item_text_17" />
+
+
+            <TextView
+                android:id="@+id/typeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="end|center_vertical"
+                android:text="@{data.type}"
+                android:textColor="@color/text_939598"
+                android:textSize="@dimen/list_item_text_15" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/projectText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="end|center_vertical"
+            android:lines="1"
+            android:text="@{data.project}"
+            android:textColor="@color/text_939598"
+            android:textSize="@dimen/list_item_text_15"
+            app:layout_constraintLeft_toLeftOf="@id/leftLayout"
+            app:layout_constraintTop_toBottomOf="@id/leftLayout" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/line_e5e5e5"
+            app:layout_constraintTop_toBottomOf="@id/projectText" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:src="@mipmap/arrow_table_right"
+            android:visibility="@{data.editEnable == 1 ? View.VISIBLE : View.GONE}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+</layout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.gt.gzclaimapp.databinding.ClaimOverviewData" />
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/yearText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="end|center_vertical"
+            android:lines="1"
+            android:text="@{data.otDate}"
+            android:textColor="@color/text_939598"
+            android:textSize="@dimen/list_item_text_17"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--<TextView-->
+        <!--android:id="@+id/monthText"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="end|center_vertical"-->
+        <!--android:text="@{data.month}"-->
+        <!--android:lines="1"-->
+        <!--android:textColor="@color/text_939598"-->
+        <!--android:textSize="@dimen/list_item_text_17"-->
+        <!--app:layout_constraintRight_toRightOf="@id/yearText"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/yearText" />-->
+
+        <View
+            android:id="@+id/verticalLine"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:background="@color/line_d8d8d8"
+            app:layout_constraintBottom_toBottomOf="@id/yearText"
+            app:layout_constraintLeft_toRightOf="@id/yearText"
+            app:layout_constraintTop_toTopOf="@id/yearText" />
+
+        <LinearLayout
+            android:id="@+id/applyCountLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@id/yearText"
+            app:layout_constraintLeft_toRightOf="@id/verticalLine"
+            app:layout_constraintRight_toLeftOf="@id/applyAmountLayout"
+            app:layout_constraintTop_toTopOf="@id/yearText">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/overview_apply"
+                android:textColor="@color/text_221e1f"
+                android:textSize="@dimen/list_item_text_17" />
+
+            <TextView
+                android:id="@+id/applyCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:singleLine="true"
+                android:ems="1"
+                android:text="@{data.apply}"
+                android:textColor="@color/text_ff8347"
+                android:textSize="@dimen/list_item_text_17" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/applyAmountLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@id/yearText"
+            app:layout_constraintLeft_toRightOf="@id/applyCountLayout"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/yearText">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/overview_amount"
+                android:textColor="@color/text_221e1f"
+                android:textSize="@dimen/list_item_text_17" />
+
+            <TextView
+                android:id="@+id/applyAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="10dp"
+                android:ems="8"
+                android:text="@{data.amount}"
+                android:textColor="@color/text_ff8347"
+                android:textSize="@dimen/list_item_text_17" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/line_e5e5e5"
+            app:layout_constraintTop_toBottomOf="@id/yearText" />
+    </android.support.constraint.ConstraintLayout>
+</layout>

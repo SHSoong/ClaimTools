@@ -1,0 +1,50 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--横线-->
+    <style name="horizontalLine">
+        <item name="android:background">@color/colorLine</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+    </style>
+
+    <!--竖线-->
+    <style name="verticalLine">
+        <item name="android:background">@color/colorLine</item>
+        <item name="android:layout_width">0.5dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!--普通单项-->
+    <style name="normalItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">44dp</item>
+    </style>
+
+    <!--编辑框-->
+    <style name="editView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">136dp</item>
+    </style>
+
+    <!--普通编辑框-->
+    <style name="normalEditView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="popwin_anim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/pop_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/pop_exit_anim</item>
+    </style>
+
+</resources>
